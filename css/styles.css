@@ -1,5 +1,6 @@
 #hidden {
   display: none;
+  text-align: center;
 }
 
 .jumbotron {
@@ -22,6 +23,7 @@
   text-align: center;
   background-color: lightblue;
   font-family: Times,inherit;
+  margin-top: 200px;
 }
 .boxmodel-2 a {
   font-size: 40px;

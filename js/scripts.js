@@ -36,6 +36,9 @@ function range(number) {
 
         return el;
    }
-console.log(range(20))
+   $("#finalResult").text(range(number_user));
+   $("#hidden").show();
 
-       
+
+});
+});
