@@ -1,8 +1,4 @@
-//User Interface logic
-$(document).ready(function() {
-  $("form#formOne").submit(function(event) {
-    event.preventDefault();
-    var number_user = $("input#userInput").val();
+
 
 //Back end logic
 
@@ -34,9 +30,19 @@ function range(number) {
         return arrayResult2
         }
 
+        //User Interface logic
+        $(document).ready(function() {
+          $("form#formOne").submit(function(event) {
+            event.preventDefault()
+
+         var number_user = $("input#userInput").val();
 
    $("#finalResult").text(range(number_user));
    $("#hidden").show();
+   function myFunction() {
+     location.reload();
+   }
+
 
 });
 });
