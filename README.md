@@ -1,4 +1,4 @@
-# _Epicodus Code Review Intro to programming Week 2_
+# _Epicodus Code Review Intro to programming Week 3_
 
 #### _Create a web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number with exceptions using HTML, CSS, BOOTSTRAP, JQUERY and JAVASCRIPT for review, 04.07.2019_
 
