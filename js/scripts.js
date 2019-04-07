@@ -2,9 +2,9 @@
 
 //Back end logic
 
-var ex1= ["1"]
-var ex2 = ["2"]
-var ex3 = ["3"]
+var exception1= ["1"];
+var exception2 = ["2"];
+var exception3 = ["3"];
 var arrayResult = [];
 var arrayResult2 = [];
 
@@ -13,23 +13,26 @@ var arrayResult2 = [];
 function range(number) {
     for (let i = 0; i <= number; i++) {
         arrayResult.push(i);
-        istr= i.toString()
-        if (istr.includes(ex3)) {
-         arrayResult2.push(istr)
-         var nameUser= $("input#nameInput").val();
-        arrayResult2[istr]=" I'm sorry, "+ nameUser.slice(0,1).toUpperCase()+nameUser.slice(1) +". I'm afraid I can't do that. "
-        } else if  (istr.includes(ex2)  ) {
-        arrayResult2.push(istr)
-        arrayResult2[istr]=" Boop! "
+        iStr= i.toString();
+        var nameUser= $("input#nameInput").val();
+        if (nameUser === "" || number ==="") {
+          alert("Please, enter a name and a number")
+          break
+        } if (iStr.includes(exception3)) {
+          arrayResult2.push(iStr);
+          arrayResult2[iStr]=" I'm sorry, "+ nameUser.slice(0,1).toUpperCase()+nameUser.slice(1) +". I'm afraid I can't do that. ";
+      } else if  (iStr.includes(exception2)  ) {
+          arrayResult2.push(iStr)
+          arrayResult2[iStr]=" Boop! "
 
-        } else if (istr.includes(ex1)) {
-          arrayResult2.push(istr)
-        arrayResult2[istr]=" Beep! "
+      } else if (iStr.includes(exception1)) {
+          arrayResult2.push(iStr);
+          arrayResult2[iStr]=" Beep! ";
         } else {
-         arrayResult2.push(istr)
+          arrayResult2.push(iStr);
         }
         }
-        return arrayResult2
+        return arrayResult2;
         }
 
 //User Interface logic

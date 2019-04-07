@@ -6,7 +6,7 @@
 
 ## Description
 
-_We'll ask to the user their name and a number and the web application will return a range from 0 to the user inputted numberwith the following exceptions :
+_We'll ask to the user their name and a number and the web application will return a range from 0 to the user inputted number with the following exceptions :
 
 * Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
 * Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
