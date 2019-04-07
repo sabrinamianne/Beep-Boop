@@ -9,13 +9,16 @@ var arrayResult = [];
 var arrayResult2 = [];
 
 
+
 function range(number) {
     for (let i = 0; i <= number; i++) {
         arrayResult.push(i);
         istr= i.toString()
         if (istr.includes(ex3)) {
          arrayResult2.push(istr)
-        arrayResult2[istr]=" I'm sorry, Dave. I'm afraid I can't do that. "
+         var nameUser= $("input#nameInput").val();
+        arrayResult2[istr]=" I'm sorry, "+ nameUser.slice(0,1).toUpperCase()+nameUser.slice(1) +". I'm afraid I can't do that. "
+        console.log(nameUser)
         } else if  (istr.includes(ex2)  ) {
         arrayResult2.push(istr)
         arrayResult2[istr]=" Boop! "
@@ -31,13 +34,13 @@ function range(number) {
         }
 
         //User Interface logic
-        $(document).ready(function() {
-          $("form#formOne").submit(function(event) {
-            event.preventDefault()
+$(document).ready(function() {
+  $("form#formOne").submit(function(event) {
+  event.preventDefault()
+var numberUser = $("input#numberInput").val();
 
-         var number_user = $("input#userInput").val();
 
-   $("#finalResult").text(range(number_user));
+   $("#finalResult").text(range(numberUser));
    $("#hidden").show();
    function myFunction() {
      location.reload();

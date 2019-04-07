@@ -6,17 +6,19 @@
    <link href='css/styles.css' rel="stylesheet" type="text/css">
    <script src="js/jquery-3.3.1.js"></script>
    <script src="js/scripts.js"></script>
-    <title>Bip Boop</title>
+    <title>Beep Boop</title>
   </head>
   <body>
     <div class="container">
       <div class= "jumbotron">
-        <h1> Bip Boop Game. </h1>
+        <h1> Beep Boop Game. </h1>
       </div>
         <p><img src="img/beep.gif" id="picbeep" alt="Picture of an animated beep"></p>
       <form id = "formOne">
-        <h2><label for ="userInput">  Enter your number to have a range with some changes : </label></h2><br>
-        <input id = "userInput" type="number" class = "form-control"/><br>
+        <h2><label for="nameInput"> Please, enter your name : </label></h2><br>
+        <input id="nameInput" type="text" class="form-control"/><br>
+        <h2><label for ="numberInput">  Please, enter your number to have a range with some changes : </label></h2><br>
+        <input id = "numberInput" type="number" class = "form-control"/><br>
         <button class="btn btn-info" type="submit">Submit</button>
         <button class= "btn btn-danger"onclick="location.reload();">Refresh Page</button>
       </form>
