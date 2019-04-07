@@ -18,7 +18,6 @@ function range(number) {
          arrayResult2.push(istr)
          var nameUser= $("input#nameInput").val();
         arrayResult2[istr]=" I'm sorry, "+ nameUser.slice(0,1).toUpperCase()+nameUser.slice(1) +". I'm afraid I can't do that. "
-        console.log(nameUser)
         } else if  (istr.includes(ex2)  ) {
         arrayResult2.push(istr)
         arrayResult2[istr]=" Boop! "
@@ -33,15 +32,17 @@ function range(number) {
         return arrayResult2
         }
 
-        //User Interface logic
+//User Interface logic
+
 $(document).ready(function() {
   $("form#formOne").submit(function(event) {
   event.preventDefault()
-var numberUser = $("input#numberInput").val();
 
+var numberUser = $("input#numberInput").val();
 
    $("#finalResult").text(range(numberUser));
    $("#hidden").show();
+   $("#pictureCoyote").show();
    function myFunction() {
      location.reload();
    }
